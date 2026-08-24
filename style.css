@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: coral;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+}
+
+.box {
+    height: 18vmin;
+}
+
+.game {
+    height: 60vmin;
+}
