@@ -23,6 +23,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1.5vmin;
+
+   /* border: 0.3vmin solid whitesmoke;
+    border-radius: 1vmin;
+    padding: 0.5vmin;
+    box-sizing: border-box;*/
 }
 
 .box {
@@ -32,5 +37,27 @@ body {
     border: none;
     /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);*/
     font-size: 8vmin;
+    color: cornflowerblue;
 }
+
+/*.try{
+    width: 63vmin;
+    height: 63vmin;
+
+    border: 0.3vmin solid whitesmoke;
+    border-radius: 1vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+#reset {
+    padding: 1rem;
+    font-size: 1.10rem;
+    background-color: pink;
+    color: aliceblue;
+}
+
+
 
