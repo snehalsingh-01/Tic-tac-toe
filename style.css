@@ -1,10 +1,13 @@
+h1 {
+    font-family: monospace;
+}
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: coral;
+    background-color: pink;
     text-align: center;
 }
 
@@ -38,6 +41,7 @@ body {
     /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);*/
     font-size: 8vmin;
     color: cornflowerblue;
+    background-color: whitesmoke;
 }
 
 /*.try{
@@ -55,8 +59,9 @@ body {
 #reset {
     padding: 1rem;
     font-size: 1.10rem;
-    background-color: pink;
+    background-color: palevioletred;
     color: aliceblue;
+    border-radius: 1rem;
 }
 
 
