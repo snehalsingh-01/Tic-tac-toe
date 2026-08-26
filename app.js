@@ -2,7 +2,7 @@ let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset");
 
 let turnO = true;
-let winingPatterns = [
+let winningPatterns = [
     [0, 1, 2],
     [0, 3, 6],
     [0, 4, 8],
@@ -23,5 +23,25 @@ boxes.forEach( (box) => {
             turnO = true;
         }
         box.disabled = true;
+
+        checkWinner();
     });
 });
+
+const checkWinner = () => {
+    for (let pattern of winningPatterns){
+       /*console.log(pattern[0], pattern[1], pattern[2]);
+        console.log(boxes[pattern[0]], boxes[pattern[1]], boxes[pattern[2]]);*/
+        
+        let pos0Val = boxes[pattern[0]].innerText;
+        let pos1Val = boxes[pattern[1]].innerText;
+        let pos2Val = boxes[pattern[2]].innerText;
+
+        if (pos0Val != "" && pos1Val != "" && pos2Val != "" ){
+            if (pos0Val === pos1Val && pos1Val === pos2Val){
+                console.log("Winner");
+            };
+        };
+    }
+};
+    
