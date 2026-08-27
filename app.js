@@ -40,8 +40,17 @@ const checkWinner = () => {
         if (pos0Val != "" && pos1Val != "" && pos2Val != "" ){
             if (pos0Val === pos1Val && pos1Val === pos2Val){
                 console.log("Winner");
+                showWinner(pos0Val);
             };
         };
     }
 };
-    
+
+let newGameBtn = document.querySelector("#newBtn");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector("#msg");
+
+const showWinner = (Winner) => {
+    msg.innerText = `Congratulations, Winner is ${Winner}`;
+    msgContainer.classList.remove("hide");
+}
